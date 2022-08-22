@@ -1,0 +1,33 @@
+.header {
+  background: var(--gray-700);
+  background-size: 200px 1440px;;
+  height: 200px;
+  
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 72px;
+  
+}
+
+rocket {
+    width: 22px;
+    height: 36px;
+    margin: 82px 0 0 657px;
+    float: left;
+    
+   
+}
+todo {
+  width: 92px;
+  height: 48px;
+  margin: 72px 0 0 691px;
+  
+}
+
+
+
