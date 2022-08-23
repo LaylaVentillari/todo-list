@@ -1,4 +1,5 @@
 import { Header } from './components/Header';
+import { Home} from './components/Home';
 import './global.css'
 
 
@@ -7,7 +8,7 @@ export function App() {
   return (
     <div>
       <Header/>
-    <h1>Hello world</h1>
+      <Home/>
     </div>
   )
 }
