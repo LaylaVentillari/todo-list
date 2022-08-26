@@ -1,0 +1,36 @@
+.taskList {
+  border-top: 1px solid rgba(51,51,51,0.8);
+  border-radius: 1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 46rem;
+  height: 11.5rem;
+  margin: 1.5rem auto 0;
+
+}
+
+.newList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--gray-300);
+  margin: 1.5rem auto 0;
+  
+}
+.newList img {
+  margin-bottom: 1rem;
+}
+
+.textList span{
+  display: flex;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+

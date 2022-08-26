@@ -1,24 +1,17 @@
 .header {
   background: var(--gray-700);
   display: flex;
+  padding: 5rem 0;
+  align-items: center;
   justify-content: center;
-  padding: 4.5rem 0 5rem;
-  align-content: center;
-
 }
 
-.header rocket {
-    width: 1.4rem;
-    height: 2.25rem;   
-    margin-right: 10px;
+logo {
+  display: inline-block;
+  height: 48px;
+  width: 126px;
 }
 
-
-.header todo {
-  width: 5.7rem;
-  height: 3rem;
-  
-}
 
 
 

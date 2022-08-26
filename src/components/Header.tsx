@@ -1,12 +1,10 @@
 import styles from './Header.module.css';
-import rocket from '../assets/rocket.svg';
-import todo from '../assets/todo.svg'
+import logo from '../assets/logo.svg';
 
 export function Header(){
     return(
         <header className={styles.header}>
-              <img src={rocket} alt="Logo rocket"/>
-              <img src={todo} alt="to do"/>
+              <img src={logo}alt="logo to do list" />
         </header>
     );
 } 
