@@ -45,11 +45,6 @@ body, input, textarea, button {
   font-size: 1rem;
 }
 
-input:focus {
-  outline: transparent;
-  box-shadow: 0 0 0  2px var(--gray-300);
-
-}
 
 button {
   cursor: pointer;

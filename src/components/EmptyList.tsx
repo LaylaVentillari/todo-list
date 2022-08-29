@@ -2,9 +2,9 @@ import styles from "./TaskList.module.css";
 import clipboard  from "../assets/clipboard.svg";
 
 
-export function TaskList() {
+export function EmptyLIst() {
   return ( 
-    <div className={styles.taskList}>
+    <div className={styles.emptyList}>
       <div className={styles.newList}> 
         <img src={clipboard}alt="" />
         <span className={styles.textList}>
