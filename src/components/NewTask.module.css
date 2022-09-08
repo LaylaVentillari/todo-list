@@ -22,7 +22,6 @@
   
 }
 
-
 .newTask button[type=submit]{
   background-color: var(--blue-600);
   color: var(--gray-100);

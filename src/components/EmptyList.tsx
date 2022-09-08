@@ -1,8 +1,7 @@
-import styles from "./TaskList.module.css";
+import styles from "./EmptyList.module.css";
 import clipboard  from "../assets/clipboard.svg";
 
-
-export function EmptyLIst() {
+export function EmptyList() {
   return ( 
     <div className={styles.emptyList}>
       <div className={styles.newList}> 
@@ -15,8 +14,8 @@ export function EmptyLIst() {
         </span>
       </div>
     </div>
-  )
-}
+    )
+}  
 
 
 

@@ -1,15 +1,19 @@
 .counter {
-  width: 46rem;
-  margin: 4rem auto 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+margin: 4rem auto 1.5rem;
+padding: 16px;
+
 }
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 350px;
+  width: 46rem;
+  
 }
 
 .created p {
@@ -46,54 +50,4 @@
   padding: 2px 8px;
   border-radius: 999px;
   gap: 10px;
-}
-
-.list {
-  height: 4.5rem;
-  width: 46rem;
-  border: 1px solid #333333;
-  background: #262626;
-  color : var(--gray-100);
-  border-radius: 8px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 24px;
-  margin-top: 24px;
-}
-
-.list input {
-    width: 1.3em;
-    height: 1.3em;
-    background-color: transparent;
-    border-radius: 50%;
-    vertical-align: middle;
-    border: 2px solid var(--blue-300);
-    appearance: none;
-    -webkit-appearance: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.list input:focus{
-  outline: none;
-  border: 2px solid var(--blue-300);
-}
-
-.list input:checked {
-    background-color: var(--purple-300);
-    border: none;
-}
-
-.list label {
-  text-align: center;
-}
-
-.list button {
-  background: transparent;
-  border:0;
-  color: var(--gray-400);
-  cursor: pointer;
-  line-height: 0;
-  border-radius: 2px;
 }

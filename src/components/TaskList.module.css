@@ -1,0 +1,77 @@
+.tasklist {
+  width: 736px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1.5rem auto 0;
+}
+
+.list {
+  display:block;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: var(--gray-500);
+  border-radius: 0.5rem;
+  height: 72px;
+  margin: 0.75rem 0;
+  color: var(--gray-100);
+  border: 1px solid var(--gray-opacity-400);
+}
+
+.list input {
+    background-color: transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid var(--blue-300);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 16px 16px 32px 16px;
+}
+
+.list input:focus{
+  outline: none;
+  border: 2px solid var(--blue-300);
+}
+
+.list input:checked {
+    background-color: var(--purple-300);
+    border: none;
+}
+
+.list span {
+  width: 632px;
+  height: 40px;
+  margin-top: 16px;
+  margin-left: 52px;
+}
+
+.list button {
+  background: transparent;
+  border:24px;
+  color: var(--gray-400);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0.5rem;
+  display: block;
+  width: 250px;
+  margin-left: auto;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+}
+
+.list button:hover {
+  color: var(--red-500);
+}
+
+
+  
+
+
+  
