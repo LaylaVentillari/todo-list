@@ -17,7 +17,7 @@ export function TaskList () {
        <div className={styles.list}>
           <input type="checkbox" id="checkList"/>
             <label htmlFor="checkList">
-              <span>Codingfor12hoursbbbbbbbbbbbbbbbbbbbooo</span>
+              <span>Codingfor12hoursbbbbbbbfffffffffffffffffffffffffffffffffffffff</span>
               <button title="excluir tarefa">
                     <Trash size={18} className={styles.trashIcon}/>
                 </button>

@@ -8,22 +8,20 @@
 }
 
 .list {
-  display:block;
-  position: relative;
+  display:flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   background: var(--gray-500);
   border-radius: 0.5rem;
-  height: 72px;
   margin: 0.75rem 0;
   color: var(--gray-100);
   border: 1px solid var(--gray-opacity-400);
 }
 
 .list input {
+    display: block;
     background-color: transparent;
     border-radius: 50%;
-    vertical-align: middle;
     border: 2px solid var(--blue-300);
     appearance: none;
     -webkit-appearance: none;
@@ -41,29 +39,28 @@
 .list input:checked {
     background-color: var(--purple-300);
     border: none;
+    padding: 0.6rem;
 }
 
-.list span {
-  width: 632px;
-  height: 40px;
-  margin-top: 16px;
-  margin-left: 52px;
+label {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
 }
 
-.list button {
+label span{
+  width: 362px;
+  padding-top: 0.5rem;
+  line-height: 1.6;
+}
+
+label button {
   background: transparent;
   border:24px;
   color: var(--gray-400);
   cursor: pointer;
   border-radius: 4px;
-  padding: 0.5rem;
-  display: block;
-  width: 250px;
-  margin-left: auto;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-
+  padding: 16px;
 }
 
 .list button:hover {
