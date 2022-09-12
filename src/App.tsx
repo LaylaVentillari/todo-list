@@ -7,20 +7,16 @@ import { TaskList } from './components/TaskList';
 
 
 
-
 export function App() {
  
   return (
     <div> 
-      
       <Header />
       <NewTaskForm />
       <TaskCounter /> 
-      <TaskList />
-     
-     
       
-      <div className={styles.wrapper}></div>
+      <div className={styles.wrapper}>
+      </div>
 
 
      

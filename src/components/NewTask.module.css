@@ -1,11 +1,11 @@
-.newTask {
+.newsTasks {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   margin-top: -1.75rem;
 }
 
-.newTask input {
+.newsTasks input {
   width: 39.875rem;
   height: 3.75rem;
   border: 1px solid var(--gray-900);
@@ -17,12 +17,12 @@
   outline: transparent;
   
 }
-.newTask input:focus {
+.newsTasks input:focus {
   border: 2px solid (var(--purple-500));
   
 }
 
-.newTask button[type=submit]{
+.newsTasks button[type=submit]{
   background-color: var(--blue-600);
   color: var(--gray-100);
   font-size: 14px;
