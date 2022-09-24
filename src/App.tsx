@@ -1,25 +1,19 @@
 import { Header } from './components/Header';
 import styles from "./App.module.css";
-import { NewTaskForm } from "./components/NewTaskForm";
 import { TaskCounter } from "./components/TaskCounter";
-import { TaskList } from './components/TaskList';
-
+import { NewTaskForm } from './components/NewTaskForm';
 
 
 
 export function App() {
- 
   return (
     <div> 
       <Header />
-      <NewTaskForm />
       <TaskCounter /> 
       
       <div className={styles.wrapper}>
+        <NewTaskForm/>
       </div>
-
-
-     
     </div>
   )
 }
