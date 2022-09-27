@@ -1,28 +1,26 @@
 import { Trash } from "phosphor-react";
 import styles from "./TaskList.module.css";
 
-export function TaskList () {
+interface TaskListProps {
+  isCompleted?: boolean;
+  title: string;
+  id: string;
+  handleDeleteTask:(id: string) => void;
+  handleAddTask:(id: string) => void;
+}
+
+export function TaskList ({
+  isCompleted = false,
+  title, 
+  handleDeleteTask, 
+  handleAddTask, 
+  id,
+}: TaskListProps){
   return(
     <div className={styles.tasklist}>
-    <div className={styles.list}>
-          <input type="checkbox" id="checkList"/>
-            <label htmlFor="checkList">
-              <span> Read a book</span>
-              <button title="excluir tarefa">
-                  <Trash size={18} className={styles.trashIcon}/>
-              </button>
-            </label> 
-       </div>
-
-       <div className={styles.list}>
-          <input type="checkbox" id="checkList"/>
-            <label htmlFor="checkList">
-              <span>Codingfor12hoursbbbbbbbfffffffffffffffffffffffffffffffffffffff</span>
-              <button title="excluir tarefa">
-                    <Trash size={18} className={styles.trashIcon}/>
-                </button>
-            </label> 
-       </div>
+          <span onClick={() => handleAddTask(id)}>
+          </span>
+          <Trash size={24} onClick={() => handleDeleteTask(id)}/>
     </div>
-  )
+  );
 }
