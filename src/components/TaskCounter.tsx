@@ -1,18 +1,30 @@
 import styles from "./TaskCounter.module.css";
-import { TaskList } from "./TaskList";
 
-export function TaskCounter() {
+interface TaskCounterProps {
+  tasks:{
+    id: number;
+    title: string;
+    isComplete: boolean;
+  }[];
+  completeTasks:() => void;
+}
+
+
+export function TaskCounter({tasks, completeTasks} : TaskCounterProps) {
   return (
     <div className={styles.counter}>
       <div className={styles.header}>
         <div className={styles.created}>
             <p>
-              Tarefas criadas <span>16</span>
+              Tarefas criadas <span>{tasks.length}</span>
             </p>
         </div>
           <div className={styles.doneTasks}>
             <p>
-              Concluidas<span>0 de 0</span>
+              Concluidas{" "}
+              <span>
+                {completeTasks.length} de 
+                {tasks.length}</span>
             </p> 
           </div> 
       </div>

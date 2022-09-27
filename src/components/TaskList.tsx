@@ -1,5 +1,8 @@
 import { Trash } from "phosphor-react";
 import styles from "./TaskList.module.css";
+import checkIcon from "../assets/checkbox.svg";
+import checkComplete from "../assets/check-complete.svg"
+
 
 interface TaskListProps {
   isCompleted?: boolean;
@@ -19,6 +22,12 @@ export function TaskList ({
   return(
     <div className={styles.tasklist}>
           <span onClick={() => handleAddTask(id)}>
+          {isCompleted ? (
+          <img src={checkComplete} alt="" />
+        ) : (
+          <img src={checkIcon} />
+        )}
+        <p style={ isCompleted ? { textDecoration:'line-through', color: '#808080'} : {textDecoration : 'none'} }>{title}</p>
           </span>
           <Trash size={24} onClick={() => handleDeleteTask(id)}/>
     </div>
