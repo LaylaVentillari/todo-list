@@ -3,7 +3,6 @@ import { PlusCircle } from 'phosphor-react';
 import { TaskList } from "./TaskList";
 import {v4 as uuidv4} from "uuid";
 import { ChangeEvent, FormEvent, InvalidEvent, InputHTMLAttributes, useEffect, useState } from "react";
-import { TaskCounter} from "./TaskCounter";
 import { EmptyList } from "./EmptyList";
 
 interface NewTaskProps {
@@ -31,7 +30,7 @@ function handleAddNewTask(event: FormEvent) {
   event.preventDefault();
 
   const newTaskList = {
-    title: 'Estudar',
+    title: newTask,
     id: uuidv4(),
     isCompleted: false,
   };
@@ -80,9 +79,23 @@ function handleAddNewTask(event: FormEvent) {
           Criar<PlusCircle size={20}/>
         </button>
       </form>
-      <div>
-        <TaskCounter/>
+      <div className={styles.counter}>
+      <div className={styles.header}>
+        <div className={styles.created}>
+            <p>
+              Tarefas criadas <span>{tasks.length}</span>
+            </p>
+        </div>
+          <div className={styles.doneTasks}>
+            <p>
+              Concluidas{" "}
+              <span>
+                {completeTask.length} de 
+                {tasks.length}</span>
+            </p> 
+          </div> 
       </div>
+   </div> 
       
       {tasks.length === 0 && (
         <div>

@@ -29,7 +29,7 @@ export function TaskList ({
         )}
         <p style={ isCompleted ? { textDecoration:'line-through', color: '#808080'} : {textDecoration : 'none'} }>{title}</p>
           </span>
-          <Trash size={24} onClick={() => handleDeleteTask(id)}/>
+          <Trash size={20} onClick={() => handleDeleteTask(id)}/>
     </div>
   );
 }

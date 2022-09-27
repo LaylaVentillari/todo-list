@@ -1,75 +1,31 @@
 .tasklist {
   width: 100%;
   max-width: 736px;
+  margin: 4rem auto 1.5rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 1.5rem auto 0;
-}
-
-.list {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  min-height: 72px;
   background: var(--gray-500);
   border-radius: 0.5rem;
-  margin: 0.75rem 0;
-  color: var(--gray-100);
-  border: 1px solid var(--gray-opacity-400);
-}
-
-.list input {
-    display: block;
-    background-color: transparent;
-    border-radius: 50%;
-    border: 2px solid var(--blue-300);
-    appearance: none;
-    -webkit-appearance: none;
-    outline: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    margin: 16px 16px 32px 16px;
-}
-
-.list input:focus{
-  outline: none;
-  border: 2px solid var(--blue-300);
-}
-
-.list input:checked {
-    background-color: var(--purple-300);
-    border: none;
-    padding: 0.6rem;
-}
-
-label {
-  display: flex;
-  flex: 1;
+  padding: 1rem;
   justify-content: space-between;
+  color: var(--gray-300);
+  outline: transparent;
+  border: 1px solid var(--gray-900);
+  font-weight: 400;
 }
 
-label span{
-  width: 362px;
-  padding-top: 0.5rem;
-  line-height: 1.6;
-}
 
-label button {
-  background: transparent;
-  border:24px;
-  color: var(--gray-400);
+.tasklist span {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
   cursor: pointer;
-  border-radius: 4px;
-  padding: 16px;
 }
 
-.list button:hover {
-  color: var(--red-500);
+.tasklist svg {
+  align-self: flex-start;
+  color: var(--gray-300);
 }
-
-
-  
-
-
-  
