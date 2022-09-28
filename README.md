@@ -16,5 +16,5 @@
 
 
 <div align ="center">
-  <img width="460" height="300"src="src/assets/todolist.gif" alt="">
+  <img width="600" height="300"src="src/assets/todolist.gif" alt="">
 </div>
