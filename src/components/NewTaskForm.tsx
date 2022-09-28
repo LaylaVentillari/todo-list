@@ -2,7 +2,7 @@ import styles from "./NewTask.module.css"
 import { PlusCircle } from 'phosphor-react';
 import { TaskList } from "./TaskList";
 import {v4 as uuidv4} from "uuid";
-import { ChangeEvent, FormEvent, InvalidEvent, InputHTMLAttributes, useEffect, useState } from "react";
+import { ChangeEvent, FormEvent, InvalidEvent, useEffect, useState } from "react";
 import { EmptyList } from "./EmptyList";
 
 interface NewTaskProps {
@@ -13,7 +13,7 @@ interface NewTaskProps {
 
 export function NewTaskForm(){
   const [tasks, setTasks] = useState<NewTaskProps[]>([]);
-  const [newTask, setNewTask] =useState("");
+  const [newTask, setNewTask] = useState("");
   
   function handleChangeNewTask(event: ChangeEvent<HTMLInputElement>){
     event.target.setCustomValidity("");
@@ -80,7 +80,7 @@ function handleAddNewTask(event: FormEvent) {
         </button>
       </form>
       <div className={styles.counter}>
-      <div className={styles.header}>
+      <div className={styles.container}>
         <div className={styles.created}>
             <p>
               Tarefas criadas <span>{tasks.length}</span>

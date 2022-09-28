@@ -11,17 +11,14 @@
   border: 1px solid var(--gray-900);
   background: var(--gray-500);
   color: var(--gray-300);
-  font-weight: 400;
   padding: 1rem;
   border-radius: 0.5rem;
   outline: transparent;
   
 }
-.newTasks input[type=text]:focus {
-  border: 2px solid (var(--purple-500));
-  
+.newTasks input[type=text]:hover{
+  border: 1px solid var(--purple-500);
 }
-
 .newTasks button[type=submit]{
   background-color: var(--blue-600);
   color: var(--gray-100);
@@ -36,6 +33,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  outline: none;
 }
 
 .counter {
@@ -43,12 +41,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   margin: 4rem auto 1.5rem;
   padding: 16px;
   
   }
-  .header {
+  .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
