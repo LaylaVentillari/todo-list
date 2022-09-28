@@ -16,7 +16,6 @@
   font-weight: 400;
 }
 
-
 .tasklist span {
   display: flex;
   width: 100%;
@@ -28,4 +27,7 @@
 .tasklist svg {
   align-self: flex-start;
   color: var(--gray-300);
+}
+.tasklist svg:hover {
+  color: var(--red-500);
 }

@@ -92,16 +92,5 @@
     gap: 10px;
   }
  
-  label button {
-    background: transparent;
-    border:24px;
-    color: var(--gray-400);
-    cursor: pointer;
-    border-radius: 4px;
-    padding: 16px;
-  }
-  
-  .list button:hover {
-    color: var(--red-500);
-  }
+ 
   
