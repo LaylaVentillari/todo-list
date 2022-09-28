@@ -13,3 +13,8 @@
 * Lists and keys
 * Properties
 * Componization
+
+
+<div align ="center">
+  <img width="460" height="300"src="assets/todolist.gif" alt="">
+</div>
