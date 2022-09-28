@@ -11,5 +11,5 @@
 * State
 * Immutability
 * Lists and keys
-* properties
+* Properties
 * Componization
